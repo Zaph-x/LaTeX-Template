@@ -1,0 +1,26 @@
+\input{setup/preamble.tex}
+\input{setup/macros.tex}
+
+\begin{document}
+\listoftodos
+\title{AUTHOR/GROUP, TITLE}
+\pagestyle{empty}
+\pagenumbering{roman}
+\input{setup/frontpage.tex}
+\input{setup/colophon.tex}
+\input{setup/titlepage.tex}
+\cleardoublepage
+\pdfbookmark[0]{Contents}{label:contents}
+\pagestyle{fancy}
+\tableofcontents
+\clearpage
+\input{setup/preface.tex}
+\input{setup/signatures.tex}
+\pagenumbering{arabic}
+%Content of report 
+\input{main_content/Lorem.tex}
+\printbibliography[heading=bibintoc]
+% \appendix
+% \appendixpage
+% \addappheadtotoc
+\end{document}
